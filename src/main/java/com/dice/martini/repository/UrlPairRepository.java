@@ -15,7 +15,7 @@ import java.util.Map;
 
 @Singleton
 public class UrlPairRepository {
-    
+
     private final AmazonDynamoDBAsync dynamo;
     private static final String SHORT_COLLUMN = "shortUrl";
     private static final String LONG_COLLUMN = "longUrl";
