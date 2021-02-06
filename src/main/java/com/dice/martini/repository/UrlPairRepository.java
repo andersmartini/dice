@@ -15,9 +15,7 @@ import java.util.Map;
 
 @Singleton
 public class UrlPairRepository {
-
-    //Todo: implement this class!! It needs to create the table if it doesn't exist
-
+    
     private final AmazonDynamoDBAsync dynamo;
     private static final String SHORT_COLLUMN = "shortUrl";
     private static final String LONG_COLLUMN = "longUrl";

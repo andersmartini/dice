@@ -16,7 +16,7 @@ You have 2 options for testing this application. Unit-tests are provided and can
 or via gradle build. it should be noted that the database is mocked in this case
 
 You other option is to run a local instance of DynamoDB, configure the application to target this local instance 
-and set up credentials in a proper way. All of this is of course automatic, just execute run.sh ;).
+and set up credentials in a proper way. Just kidding - just execute run.sh ;).
 
 ##The API
 The application will start on port 8080 and has 2 endpoints. to create a shortened URL you can run the following:
