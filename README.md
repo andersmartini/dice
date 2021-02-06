@@ -13,10 +13,12 @@ can handle.
 
 ##Testing the application
 You have 2 options for testing this application. Unit-tests are provided and can be run either from your favourite IDE
-or via gradle build. it should be noted that the database is mocked in this case
+or via `./gradlew build`. it should be noted that the database is mocked in this case.
 
-You other option is to run a local instance of DynamoDB, configure the application to target this local instance 
-and set up credentials in a proper way. Just kidding - just execute run.sh ;).
+Your other option is to run a local instance of DynamoDB, configure the application to target this local instance 
+and set up credentials in a proper way. **Just kidding** - just execute `run.sh` ;).
+
+This script requires `Java 11`, `wget`, and `tar` to be installed on your system beforehand.
 
 ##The API
 The application will start on port 8080 and has 2 endpoints. to create a shortened URL you can run the following:
