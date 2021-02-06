@@ -40,7 +40,7 @@ class ShortenTest {
     @Test
     public void canShortenUrl() {
         var longUrl = "https://andersmartini.com";
-        var expectedHash = "dc87807a5";
+        var expectedHash = "dc87807a58";
         var request = HttpRequest.POST("/shorten", longUrl);
 
         var urlPairCaptor = ArgumentCaptor.forClass(UrlPair.class);
@@ -49,7 +49,7 @@ class ShortenTest {
         var result = client.toBlocking().retrieve(request);
 
         var capturedPair = urlPairCaptor.getValue();
-        assertEquals("localhost:8080/dc87807a5", result);
+        assertEquals(String.format("localhost:8080/%s",expectedHash), result);
         assertEquals(expectedHash, capturedPair.getHash());
         assertEquals(longUrl, capturedPair.getLongUrl());
     }
