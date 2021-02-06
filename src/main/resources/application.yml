@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: martini
+app:
+  url: localhost:8080
